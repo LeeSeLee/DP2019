@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <title>hraining</title>
+        <meta charset="utf-8">
+        <meta name="author" content="이세이" />
+        <meta name="keywords" content="HTML, 콘텐츠 프로그래밍" />
+
+    </head>
+
+    <body>
+
+        <!-- h1~h6 제목. 순번x, 깊이(depth)o -->
+
+        <h1>대한민국</h1>
+        <h2>서울</h2>
+        <h3>영등포구</h3>
+        <h3>마포구</h3>
+        <h2>경기도</h2>
+        <h3>과천시</h3>
+        <hr />
+        <h3>의왕시</h3>
+        <p>계원 예술대학교가 있는 도시</p>
+        <hr />
+        <h3>안양시</h3>
+        <h2>강원도</h2>
+        <h1>충청도</h1>
+        <h1>미국</h1>
+        <h1>중국</h1>
+        <h1>일본</h1>
+
+        <!-- anchor 닻 -->
+
+        <a href="http://www.naver.com" target="_blank">네이버 바로가기</a><br />
+
+        <!-- _self, _blank -->
+
+        <!-- image 그림 -->
+
+        <img src="https://pds.joins.com/news/component/htmlphoto_mmdata/201907/26/fc4cd7e6-eb2b-4e4f-9225-591d5010c7e0.jpg" />
+        <img src="images.jpg" />
+
+        <!-- p문단 -->
+
+        <p>
+            서술형으로 되어 있는 한 주제에 대한 글이 들어갑니다.
+        </p>
+        <p>
+            주제가 바뀌면 새로운 문단이 시작됩니다.
+        </p>
+
+        <!-- br 줄내림 -->
+        주제가 바뀌면 <br /> <br />문단이 시작됩니다.
+
+        <!-- hr 가로줄-->
+        <hr />
+
+        <!-- unordered list 비 순차적 목록-->
+        <ul>
+            <li>설탕 100g</li>
+            <li>소금 100g</li>
+            <li>물 100ml</li>
+        </ul>
+
+        <!-- ordered list 순차적 목록 -->
+        <ol>
+            <li>물을 끓인다</li>
+            <li>라면을 넣는다</li>
+            <li>먹는다</li>
+            <li>설거지를 한다</li>
+        </ol>
+
+        <!-- difinition list 정의형 목록 -->
+        <dl>
+            <dt>unordered list 비 순차적 목록</dt>
+            <dd>순서에 중요한 의미가 있는 목록을 이야기 한다.</dd>
+        </dl>
+        <!-- strong, em <> b, i -->
+        <strong>강한 강조</strong>
+        <em>강조</em>
+
+        <b>볼드체</b>
+        <i>이텔릭체</i>
+
+        <!-- ins 첨부글, del 삭제글 <> u, strike-->
+        <ins>첨부하는 내용</ins>
+        <del>쓸데없는 내용. 변경되어 삭제될 내용</del>
+
+        <u>밑줄</u>
+        <strike>중간줄</strike>
+
+        <!-- sup, sub -->
+        2<sup>2</sup> : wprhqtn, 2의 2승
+        H<sub>2</sub>0 : 물의 화학식 <br><br>
+        <img src="images/parkjihoon1.jpg" width="100px"/>
+        <img src="./images/parkjihoon1.jpg" height="100px"/><br><br>
+
+        <style>
+            table, tr, td{
+                border: solid 1px black;
+            }
+        </style>
+        <!-- table 도표 -->
+        <!-- table, tr 행 한줄 , td 열 한칸-->
+        <!-- summary 요약, caption 표제 -->
+        <table summary="도전과제">
+            <caption>[표1] 도전과제</caption>
+            <!-- thead, tbody, tfoot -->
+            <tbody>
+                <tr>
+                    <!-- colspan 열늘이기 - 가로로 늘림, rowspan 행늘이기 - 세로로 늘림-->
+                    <td colspan="3">up</td> <!-- 가로로 두칸 차지함 -->
+                    <td rowspan="2">right</td> <!-- 세로로 두칸 차지함 -->
+                </tr>
+
+                <tr>
+                    <td rowspan="2">left</td>
+                    <td colspan="2">center</td>
+                </tr>
+                <tr>
+                    <td colspan="4">down</td>
+                </tr>
+            </tbody>
+            </table>
+            <br><br>
+            <form>
+                <input type="text" placeholder="아이디를 입력하세요."/>
+                <input type="password" placeholder="패스워드를 입력하세요."/>
+
+                <input type="radio" name="bt1"/>
+                <input type="radio" name="bt1"/>
+                <input type="radio" name="bt1"/>
+                <!-- name이 동일 해야함 -->
+                <input type="radio" name="bt2"/>
+                <input type="radio" name="bt2"/>
+                <input type="radio" name="bt2"/>
+
+                <input type="checkbox"/>
+                <input type="checkbox"/>
+                <input type="checkbox"/>
+                <input type="checkbox"/>
+                
+            <select>
+                <option>짜장면</option>
+                <option>짬뽕</option>
+            </select>
+
+                <textarea cols="30" raw="5"> 
+
+            </textarea>
+            <!-- 가로 3글자, 세로 5줄 정도의 크기 -->
+
+            <input type="button" value="버튼이름"/>
+            <input type="button" value="테스트버튼" onclick="alert('테스트 버튼이 눌렸습니다')"/>
+
+            <input type="submit" value="제출"/>
+            
+        </form>
+
+        <br><br>
+            <a href="index.html">돌아가기</a>
+        </body>
+
+</html>
